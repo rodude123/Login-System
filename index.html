@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My cool site</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="loginSignup">
+        <div class="login" id="loginContainer">
+            <h2>Login</h2>
+            <form action="" class="mainForm" method="POST">
+                <div class="logoContainer"><img src="" alt="logo of site" class="logo"></div>
+                <div class="container">
+                    <div class="formField">
+                        <label for="userEmail">Username/Email:</label>
+                        <input class="inputField" type="text" id="userEmail" required>
+                    </div>
+                    <div class="formField">
+                        <label for="loginPass">Password:</label>
+                        <input class="inputField" type="password" id="loginPass" required>
+                    </div>
+                    <input type="submit" value="Login">
+                </div>
+                <div>Don't have an account <a href="#" id="goToSignup">Sign up here</a></div>
+            </form>
+        </div>
+        <div class="signup" id="signupContainer">
+            <h2>Signup</h2>
+            <form action="" class="mainForm" method="POST">
+                <div class="logoContainer"><img src="" alt="logo of site" class="logo"></div>
+                <div class="container">
+                    <div class="formField">
+                        <label for="name">Name *:</label>
+                        <input class="inputField" type="text" id="name" required>
+                    </div>
+                    <div class="formField">
+                        <label for="username">Username:</label>
+                        <input class="inputField" type="text" id="username" required>
+                    </div>
+                    <div class="formField">
+                        <label for="email">Email *:</label>
+                        <input class="inputField" type="email" id="email" required>
+                    </div>
+                    <div class="formField">
+                        <label for="signupPass">Password *:</label>
+                        <input class="inputField" type="password" id="signupPass" required>
+                    </div>
+                    <div class="formField">
+                        <label for="rePass">Re-type Password *:</label>
+                        <input class="inputField" type="password" id="rePass" required>
+                    </div>
+                    <div class="formField">
+                        <label for="website">Website: </label>
+                        <input class="inputField" type="text" id="website">
+                    </div>
+                    <input type="submit" value="Signup">
+                </div>
+                <div>Already have an account <a href="#" id="goToLogin">Login Here</a></div>
+            </form>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
