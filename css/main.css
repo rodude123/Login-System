@@ -1,0 +1,72 @@
+:root{
+    --dark: #494947;
+    --light: #C9C6D2;
+    --accent: #ABDAE1;
+    --light2: #A3B9C9;
+    --accent2: #52CCDE;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    background: var(--light2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginSignup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.login, .signup{
+    padding: 10% 15% 15% 15%;
+    border-radius: 25px;
+    background: white;
+}
+
+.signup{
+    display: none;
+}
+
+.formField .inputField{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: block;
+    border-radius: 15px;
+    border: none;
+    background: var(--light2);
+    color: var(--dark);
+}
+
+.formField .inputField:hover, .formField .inputField:focus{
+    border: 1px solid var(--accent2);
+}
+
+.container input[type=submit]{
+    background: var(--accent2);
+    color: var(--dark);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.container input[type=submit]:hover, .container input[type=submit]:focus{
+    background: #45ADBD;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainForm a:visited{
+    color: black;
+}
