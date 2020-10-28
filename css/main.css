@@ -7,31 +7,52 @@
 }
 
 html, body{
+    /*Standard stuff to make it function properly*/
     margin: 0;
     height: 100%;
     background: var(--light2);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /*simple, good looking font*/
 }
 
 .loginSignup{
+    /*use flexbox to center the container horizontally and vertically*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
+    perspective: 800px; /*give the transition a bit of perspective to make it look nicer really*/
+    position: relative;
 }
 
-.login, .signup{
-    padding: 10% 15% 15% 15%;
+.login, .signup {
+    /*make each form look nice*/
+    padding: 100px 145px 145px 145px;
     border-radius: 25px;
     background: white;
+    position: absolute;
+    backface-visibility: hidden; /*hidden so we can interact with the form in front*/
+    transition: 1s;
 }
 
 .signup{
-    display: none;
+    opacity: 0;
+    transform: rotateY(180deg); /*originally signup is flipped*/
+}
+
+/*when flipped class is toggled*/
+.signup.flipped{
+    opacity: 1;
+    transform: rotateY(0deg) /*signup is un-flipped making it visible*/;
+}
+
+.login.flipped{
+    opacity: 0;
+    transform: rotateY(-180deg) /*login is flipped making it not visible*/;
 }
 
 .formField .inputField{
+    /*make the input fields look nicer*/
     width: 100%;
     padding: 10px 20px;
     margin: 8px 0;
@@ -47,6 +68,7 @@ html, body{
 }
 
 .container input[type=submit]{
+    /*make a good looking submit button for form*/
     background: var(--accent2);
     color: var(--dark);
     padding: 12px 20px;
@@ -61,6 +83,7 @@ html, body{
 }
 
 .container{
+    /*center the form so that the submit button also gets centered too*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,3 +93,4 @@ html, body{
 .mainForm a:visited{
     color: black;
 }
+

@@ -1,11 +1,14 @@
 document.querySelector("#goToSignup").addEventListener("click", () =>
 {
-	document.querySelector("#loginContainer").style.display = "none";
-	document.querySelector("#signupContainer").style.display = "block";
+	//toggle the flipped class when going to signup
+	document.querySelector("#loginContainer").classList.toggle("flipped");
+	document.querySelector("#signupContainer").classList.toggle("flipped");
 });
 
 document.querySelector("#goToLogin").addEventListener("click", () =>
 {
-	document.querySelector("#loginContainer").style.display = "block";
-	document.querySelector("#signupContainer").style.display = "none";
+	//toggle the flipped class when going to login
+	document.querySelector("#loginContainer").classList.toggle("flipped");
+	document.querySelector("#signupContainer").classList.toggle("flipped");
 });
+
